@@ -28,6 +28,5 @@ cart.onclick = () =>{
     }
 
     let dollar = Math.floor(bill)
-    let cent = Math.floor(bill - dollar)* 100;
-    console.log(`The total bill amount is ${dollar} dollars and ${cent} only`)
+    console.log(`The total bill amount is ${dollar} dollars`)
 }
