@@ -2,13 +2,13 @@ var bt=document.querySelectorAll(".button")
 var cart=document.getElementById("cart")
 var value= document.getElementById("cart-value")
 var product=document.querySelectorAll("h3")
-var price=document.querySelectorAll("div p")
+var p=document.querySelectorAll("div p")
 var data=[];
 var bill=0
 var total=0
 function showItems(e){
     let name = product[e].textContent
-    let cost = parseFloat(price[e].textContent.replace("$",""))
+    let cost = parseFloat(p[e].textContent.replace("$",""))
     let present = data.find((item) => item.name === name)
     if(present){
         present.quantity += 1
